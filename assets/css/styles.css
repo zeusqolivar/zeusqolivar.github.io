@@ -114,17 +114,17 @@ body {
 
 .nav-toggle { display: none; }
 
-/* Hero Section - Super Compact */
+/* Hero Section - Ultra Compact */
 .hero {
   background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
-  padding: 40px 0;
+  padding: 20px 0;
   position: relative;
 }
 
 .hero-inner {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 20px;
+  gap: 16px;
   align-items: center;
 }
 
@@ -134,9 +134,9 @@ body {
 }
 
 .profile-image img {
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
   border: 2px solid var(--primary);
   object-fit: cover;
   box-shadow: var(--shadow);
@@ -147,41 +147,41 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
-  margin: 0 0 4px;
+  margin: 0 0 2px;
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .subtitle {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
-  margin: 0 0 8px;
+  margin: 0 0 6px;
 }
 
 .hero-badges {
   display: flex;
-  gap: 8px;
-  margin: 8px 0;
+  gap: 6px;
+  margin: 4px 0;
 }
 
 .badge {
-  padding: 4px 8px;
+  padding: 3px 6px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  font-size: 12px;
+  border-radius: 10px;
+  font-size: 11px;
   color: var(--text-muted);
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
 }
 
 .badge.available {
@@ -191,18 +191,18 @@ body {
 }
 
 .lead {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
-  line-height: 1.5;
-  margin: 0;
+  line-height: 1.4;
+  margin: 6px 0 0;
 }
 
 /* Compact Actions */
 .hero-actions {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  min-width: 140px;
+  gap: 6px;
+  min-width: 120px;
 }
 
 /* Ultra Compact Buttons */
@@ -252,8 +252,8 @@ body {
 /* Stats - Horizontal Compact */
 .stats-mini {
   display: flex;
-  gap: 16px;
-  margin-top: 12px;
+  gap: 12px;
+  margin-top: 8px;
 }
 
 .stat-mini {
@@ -261,22 +261,22 @@ body {
 }
 
 .stat-mini .number {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--primary);
   line-height: 1;
 }
 
 .stat-mini .label {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--text-light);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* Sections - Minimal Padding */
+/* Sections - Ultra Minimal Padding */
 .section {
-  padding: 32px 0;
+  padding: 20px 0;
   border-top: 1px solid var(--border-light);
 }
 
@@ -285,32 +285,32 @@ body {
 }
 
 .section h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   color: var(--text);
 }
 
 /* Compact Two Column */
 .two-col {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 20px;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
   align-items: start;
 }
 
 /* Ultra Compact Cards */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 8px;
 }
 
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 10px;
+  padding: 12px;
   transition: all 0.2s;
 }
 
@@ -321,31 +321,31 @@ body {
 }
 
 .card-header {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .card-header h4 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  margin: 0 0 4px;
+  margin: 0 0 2px;
   color: var(--text);
 }
 
 .card-meta {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-light);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .card-body {
-  font-size: 13px;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.3;
 }
 
 .card-body .tech {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--text-muted);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-weight: 500;
 }
 
@@ -357,32 +357,32 @@ body {
 /* Compact Skills */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
 }
 
 .skill-group h3 {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-weight: 600;
 }
 
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 4px;
   list-style: none;
 }
 
 .tag-list li {
-  padding: 4px 8px;
+  padding: 3px 6px;
   background: var(--bg-soft);
   border: 1px solid var(--border-light);
-  border-radius: 8px;
-  font-size: 11px;
+  border-radius: 6px;
+  font-size: 10px;
   color: var(--text-muted);
   font-weight: 500;
 }
@@ -390,46 +390,46 @@ body {
 /* Compact Education */
 .edu-grid {
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 
 .edu-item {
   display: flex;
-  gap: 12px;
-  padding: 16px;
+  gap: 10px;
+  padding: 12px;
   background: var(--bg-card);
   border: 1px solid var(--border-light);
-  border-radius: 12px;
+  border-radius: 10px;
   align-items: flex-start;
 }
 
 .edu-icon {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: var(--bg-soft);
-  border-radius: 10px;
+  border-radius: 8px;
   display: grid;
   place-items: center;
-  font-size: 18px;
+  font-size: 16px;
   flex-shrink: 0;
 }
 
 .edu-content h3 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  margin: 0 0 4px;
+  margin: 0 0 2px;
 }
 
 .edu-meta {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-light);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .edu-desc {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--text-muted);
-  line-height: 1.4;
+  line-height: 1.3;
   margin: 0;
 }
 
@@ -451,43 +451,43 @@ body {
 }
 
 .contact-section h2 {
-  font-size: 24px;
-  margin-bottom: 8px;
+  font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .contact-subtitle {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
 .contact-item {
-  padding: 16px 12px;
+  padding: 12px 8px;
   background: var(--bg-soft);
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
 }
 
 .contact-item .icon {
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .contact-item h4 {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  margin: 0 0 4px;
+  margin: 0 0 2px;
 }
 
 .contact-item p {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
   margin: 0;
 }
@@ -506,7 +506,7 @@ body {
 /* Footer - Minimal */
 .site-footer {
   border-top: 1px solid var(--border-light);
-  padding: 20px 0;
+  padding: 16px 0;
   background: var(--bg-soft);
 }
 
@@ -514,7 +514,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-light);
 }
 
@@ -538,25 +538,32 @@ body {
 @media (max-width: 768px) {
   .container { padding: 0 12px; }
   
+  .hero { padding: 16px 0; }
+  
   .hero-inner {
     grid-template-columns: auto 1fr;
-    gap: 12px;
+    gap: 10px;
   }
   
   .hero-actions {
     grid-column: 1 / -1;
     flex-direction: row;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 12px;
   }
   
   .stats-mini {
     justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .section {
+    padding: 16px 0;
   }
   
   .two-col {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
   }
   
   .cards {
@@ -565,12 +572,13 @@ body {
   
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 6px;
   }
   
   .contact-actions {
     flex-direction: column;
     align-items: center;
+    gap: 8px;
   }
   
   .site-nav {
@@ -581,30 +589,34 @@ body {
     display: block;
     background: none;
     border: 1px solid var(--border);
-    padding: 8px;
+    padding: 6px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  html { font-size: 13px; }
+  html { font-size: 12px; }
   
   .hero {
-    padding: 24px 0;
+    padding: 12px 0;
   }
   
   .section {
-    padding: 24px 0;
+    padding: 12px 0;
   }
   
   .hero-content h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   .profile-image img {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .stats-mini {
+    gap: 8px;
   }
 }
 

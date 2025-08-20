@@ -300,7 +300,80 @@ body {
   align-items: start;
 }
 
-/* Ultra Compact Cards */
+/* Experience Timeline - Column Layout */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.experience-item:hover {
+  border-color: var(--border);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
+.experience-header {
+  margin-bottom: 8px;
+}
+
+.experience-header h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 3px;
+  color: var(--text);
+}
+
+.experience-meta {
+  font-size: 12px;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.experience-body {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.experience-body .tech-stack {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 500;
+  padding: 4px 8px;
+  background: var(--bg-soft);
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.experience-body p {
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Ultra Compact Cards (for other sections) */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -569,6 +642,14 @@ body {
   
   .cards {
     grid-template-columns: 1fr;
+  }
+  
+  .experience-timeline {
+    gap: 12px;
+  }
+  
+  .experience-item {
+    padding: 12px;
   }
   
   .contact-grid {

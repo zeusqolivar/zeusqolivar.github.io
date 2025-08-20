@@ -296,81 +296,132 @@ body {
 .two-col {
   display: grid;
   grid-template-columns: 160px 1fr;
-  gap: 16px;
+  gap: 24px;
   align-items: start;
 }
 
-/* Experience Timeline - Column Layout */
+/* Experience Section Specific */
+#experience .two-col {
+  gap: 32px;
+}
+
+#experience h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+#experience h2::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
+/* Experience Timeline - Elegant Column Layout */
 .experience-timeline {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
+  position: relative;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), transparent);
+  opacity: 0.3;
 }
 
 .experience-item {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
-  border-radius: 12px;
-  padding: 16px;
-  transition: all 0.2s;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
   position: relative;
-}
-
-.experience-item:hover {
-  border-color: var(--border);
-  box-shadow: var(--shadow-sm);
-  transform: translateY(-1px);
+  margin-left: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .experience-item::before {
   content: '';
   position: absolute;
-  left: -1px;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--gradient);
-  border-radius: 2px;
+  left: -32px;
+  top: 24px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.experience-item:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
 }
 
 .experience-header {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .experience-header h4 {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0 0 3px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px;
   color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 .experience-meta {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-light);
-  margin-bottom: 8px;
+  margin-bottom: 0;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.experience-meta::before {
+  content: '📍';
+  font-size: 12px;
 }
 
 .experience-body {
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .experience-body .tech-stack {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--text-muted);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-weight: 500;
-  padding: 4px 8px;
-  background: var(--bg-soft);
-  border-radius: 6px;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, var(--bg-soft) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border-radius: 8px;
   display: inline-block;
+  border: 1px solid var(--border-light);
 }
 
 .experience-body p {
   color: var(--text-muted);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 13px;
 }
 
 /* Ultra Compact Cards (for other sections) */
@@ -645,11 +696,22 @@ body {
   }
   
   .experience-timeline {
-    gap: 12px;
+    gap: 20px;
+  }
+  
+  .experience-timeline::before {
+    left: 16px;
   }
   
   .experience-item {
-    padding: 12px;
+    padding: 16px;
+    margin-left: 32px;
+  }
+  
+  .experience-item::before {
+    left: -24px;
+    width: 10px;
+    height: 10px;
   }
   
   .contact-grid {

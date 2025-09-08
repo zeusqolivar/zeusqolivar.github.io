@@ -424,6 +424,12 @@ body {
   font-size: 13px;
 }
 
+/* Make links inside experience section white for better contrast */
+#experience a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 /* Ultra Compact Cards (for other sections) */
 .cards {
   display: grid;

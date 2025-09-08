@@ -3,4 +3,7 @@ Allow: /
 
 Sitemap: https://zeusqolivar.github.io/sitemap.xml
 
+# Target Philippines search relevance
+Host: zeusqolivar.github.io
+
 

@@ -322,6 +322,27 @@ body {
   border-radius: 2px;
 }
 
+#experience .experience-intro {
+  font-size: 14px;
+  color: var(--text-light);
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.experience-group-heading {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+  margin: 0 0 12px 40px;
+  padding-top: 8px;
+}
+
+.experience-group-heading:first-of-type {
+  padding-top: 0;
+}
+
 /* Experience Timeline - Elegant Column Layout */
 .experience-timeline {
   display: flex;
@@ -703,6 +724,10 @@ body {
   
   .experience-timeline {
     gap: 20px;
+  }
+  
+  .experience-group-heading {
+    margin-left: 32px;
   }
   
   .experience-timeline::before {

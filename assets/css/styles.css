@@ -303,6 +303,12 @@ body {
 /* Experience Section Specific */
 #experience .two-col {
   gap: 32px;
+  /* Keep timeline in wide column: first column = heading + intro, second = timeline */
+  grid-template-columns: minmax(180px, 220px) 1fr;
+}
+
+.experience-heading-block {
+  min-width: 0;
 }
 
 #experience h2 {

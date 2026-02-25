@@ -300,15 +300,10 @@ body {
   align-items: start;
 }
 
-/* Experience Section Specific */
-#experience .two-col {
-  gap: 32px;
-  /* Keep timeline in wide column: first column = heading + intro, second = timeline */
-  grid-template-columns: minmax(180px, 220px) 1fr;
-}
-
-.experience-heading-block {
-  min-width: 0;
+/* Experience Section Specific - single column so timeline always has full width */
+#experience .two-col.experience-full-width {
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
 #experience h2 {
@@ -326,13 +321,6 @@ body {
   height: 3px;
   background: var(--gradient);
   border-radius: 2px;
-}
-
-#experience .experience-intro {
-  font-size: 14px;
-  color: var(--text-light);
-  margin: 0 0 24px;
-  line-height: 1.5;
 }
 
 .experience-group-heading {
